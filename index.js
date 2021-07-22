@@ -160,7 +160,7 @@ console.log(`
 `);
 
 execSync(
-  `git add . && git commit -a -m "check in prod dependencies" && git push && git tag ${version} && git push --tags`,
+  `git add . && git commit -a -m "check in prod dependencies" && git push && git tag ${version} -m "${version}" && git push --tags`,
   {
     encoding: "utf8",
     stdio: "inherit"
